@@ -99,4 +99,17 @@ The results are also saved and evaluated in image format. Few example outputs wi
 
 ![Example Results](https://github.com/SparrowHere/hand-gesture-classification/assets/111817817/9690f3ef-b6eb-43f6-ada5-2b8db48545ff)
 
+## Contributing
+Contributions are welcome! Please follow these steps to contribute:
 
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature`).
+3. Commit your changes (`git commit -am 'Add some feature'`).
+4. Push to the branch (`git push origin feature/your-feature`).
+5. Create a new pull request.
+
+## License
+This project is licensed under the `MIT License`, see the [LICENSE](https://github.com/SparrowHere/hand-gesture-classification/blob/main/LICENSE) file for details.
+
+## Acknowledgements
+I would like to share my appriciation for the project team -- my friends who put in the efforts for the whole process and done their best to help me stay motivated. You guys are the best ✌️
