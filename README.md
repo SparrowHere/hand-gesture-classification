@@ -36,7 +36,7 @@ Hand gesture classification model that leverages skeleton-based model to extract
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/hand-gesture-classification.git
+git clone https://github.com/SparrowHere/hand-gesture-classification.git
 cd hand-gesture-classification
 ```
 
