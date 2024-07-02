@@ -19,7 +19,7 @@ Hand gesture classification model that leverages skeleton-based model to extract
 - Supports multiple gestures including `Open Palm`, `Peace Sign`, `Rock On`, `OK Sign`, and `NOK Sign`.
 - Utilizes `Mediapipe Hands` for efficient and accurate hand tracking.
 - Model is trained with the joint locations extracted from the images of hands
-- Easy to extend and customizable for additional gestures.
+- Extendible and customizable for additional gestures.
 
 ## Installation
 
