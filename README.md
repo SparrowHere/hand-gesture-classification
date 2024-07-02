@@ -1,5 +1,3 @@
-
-https://github.com/SparrowHere/hand-gesture-classification/assets/111817817/8452c46e-86d0-40d6-9975-cfdcd1751631
 # Hand Gesture Classification with MediaPipe
 Hand gesture classification model that leverages skeleton-based model to extract joint locations from images of hands.
 
