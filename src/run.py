@@ -15,6 +15,7 @@ CLASS = ["Open Palm", "Peace Sign", "Rock On", "OK Sign","NOK Sign"]
 CLASS_IDX = 0
 COUNT = 0
 TOTAL = 100
+MODEL_DIR = os.getcwd() + "\\models\\hand_gesture_model.pkl"
 
 HANDS = mp.solutions.hands.Hands(
     model_complexity=1,
@@ -24,10 +25,21 @@ HANDS = mp.solutions.hands.Hands(
     )
 DRAW = mp.solutions.drawing_utils
 
-MODEL = pickle.load(open(r'C:\Users\serce\Desktop\ml_project\models\hand_gesture_model.pkl', 'rb'))
+MODEL = pickle.load(open(MODEL_DIR, 'rb'))
 CAP = cv2.VideoCapture(0)
 
 def resize(image, DESIRED_HEIGHT, DESIRED_WIDTH):
+    """
+    Resizes the given image while maintaining the aspect ratio.
+
+    Args:
+        image (`np.ndarray`): The input image to be resized.
+        desired_height (`int`): The desired height of the output image.
+        desired_width (`int`): The desired width of the output image.
+
+    Returns:
+        `np.ndarray`: The resized image.
+    """
     H, W = image.shape[:2]
     if H < W:       # Portrait
         image = cv2.resize(image, (DESIRED_WIDTH, math.floor(H / (W / DESIRED_WIDTH))))
@@ -36,6 +48,10 @@ def resize(image, DESIRED_HEIGHT, DESIRED_WIDTH):
     return image
 
 def main():
+    """
+    Captures real-time video from the webcam, processes each frame to detect hand landmarks,
+    and classifies the hand gesture based on the detected landmarks.
+    """
     while CAP.isOpened():
         ret, frame = CAP.read()
         if not ret:
@@ -67,7 +83,7 @@ def main():
         cv2.imshow('MediaPipe Hands', frame)
 
         if cv2.waitKey(5) & 0xFF == ord('s'):
-            img_name = os.path.join(r"C:\Users\serce\Desktop\ml_project\test", f"test_{time.time()}.jpg")
+            img_name = os.path.join(os.getcwd() + "\\test", f"test_{time.time()}.jpg")
             cv2.imwrite(img_name, frame)
             print(f"Saved frame as '{img_name}'")
         if cv2.waitKey(1) & 0xFF == ord('q'):
