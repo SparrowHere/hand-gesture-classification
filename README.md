@@ -4,15 +4,14 @@ Hand gesture classification model that leverages skeleton-based model to extract
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ## Table of Contents
-2. [Features](#features)
-3. [Installation](#installation)
-4. [Usage](#usage)
-5. [Data](#data)
-6. [Model Training](#model-training)
-8. [Results](#results)
-9. [Contributing](#contributing)
-10. [License](#license)
-11. [Acknowledgements](#acknowledgements)
+2. [Features]
+3. [Installation]
+4. [Usage]
+5. [Data & Model Training]
+8. [Results]
+9. [Contributing]
+10. [License]
+11. [Acknowledgements]
 
 ## Features
 
@@ -54,7 +53,7 @@ python src/run.py
 ```
 https://github.com/SparrowHere/hand-gesture-classification/assets/111817817/b94f2d3d-0476-4331-bb4c-f692d057318a
 
-## Model Training
+## Data & Model Training
 The dataset used for training the hand gesture classifier consists of images of hands performing different gestures. The data is collected manually using `OpenCV` and `OS` libraries. This process is automated so that it's possible to add new classes and images if needed.
 
 ![Types of Hand Gestures](https://github.com/SparrowHere/hand-gesture-classification/assets/111817817/804ef0a9-4e5d-47c1-aa17-b70f9cbd583b)
@@ -71,14 +70,14 @@ Data is organized into their respective directory as shown below:
 │   │   ├── Rock Sign          <- Images of hands belonging to "Rock Sign" class.
 ```
 
-Joint information is gathered from 21 joints and saved in the `.csv` format. Predictive model is trained using the data that is saved as `.csv`.
+Joint information was collected from 21 joints and saved in `.csv` format. The predictive model was trained using this data.
 
-The model is trained using a `RandomForestClassifier` with the following parameters:
+The model was trained using a `RandomForestClassifier` with the following parameters.
 ```python
 RandomForestClassifier(n_estimators=10, random_state=42)
 ```
 ## Results
-After evaluation, the model achieved **%98** on the test set.
+After evaluation, the model achieved **%98** accuracy on the test set.
 ```
               precision    recall  f1-score   support
 
@@ -92,11 +91,11 @@ After evaluation, the model achieved **%98** on the test set.
    macro avg       0.99      0.98      0.98       100
 weighted avg       0.98      0.98      0.98       100
 ```
-The confusion matrix is given below:
+The confusion matrix of the mentioned test set is given below.
 <p align="center">
   <img src="https://github.com/SparrowHere/hand-gesture-classification/assets/111817817/7242f1c1-e601-4912-8d7f-f88b25110f63" alt="Confusion Matrix of the Test Data"/>
 </p>
-The results are also saved and evaluated in image format. Few example outputs with their respected results are given below.
+The results were also saved and evaluated in image format. Few example outputs with their respected results are given below.
 
 ![Example Results](https://github.com/SparrowHere/hand-gesture-classification/assets/111817817/9690f3ef-b6eb-43f6-ada5-2b8db48545ff)
 
