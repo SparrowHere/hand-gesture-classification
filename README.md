@@ -48,10 +48,11 @@ Install the necessary libraries.
 pip install -r requirements.txt
 ```
 ## Usage
-In order to use the program real-time, run the command below on your terminal:
+In order to use the program real-time, run the command below on your terminal.
 ```bash
 python src/run.py
 ```
+https://github.com/SparrowHere/hand-gesture-classification/assets/111817817/b94f2d3d-0476-4331-bb4c-f692d057318a
 
 ## Model Training
 The dataset used for training the hand gesture classifier consists of images of hands performing different gestures. The data is collected manually using `OpenCV` and `OS` libraries. This process is automated so that it's possible to add new classes and images if needed.
