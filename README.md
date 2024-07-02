@@ -1,4 +1,4 @@
-# Hand Gesture Classification with MediaPipe
+nd Gesture Classification with MediaPipe
 Hand gesture classification model that leverages skeleton-based model to extract joint locations from images of hands.
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
@@ -58,7 +58,7 @@ The dataset used for training the hand gesture classifier consists of images of 
 
 ![Types of Hand Gestures](https://github.com/SparrowHere/hand-gesture-classification/assets/111817817/804ef0a9-4e5d-47c1-aa17-b70f9cbd583b)
 
-Data is organized into their respective directory as shown below:
+Data is organized into their respective directory as given below. 
 ```
 ├── data
 │   ├── hand_landmarks.csv     <- Joint data extracted from images using `Mediapipe Hands`
@@ -96,6 +96,7 @@ The confusion matrix of the mentioned test set is given below.
   <img src="https://github.com/SparrowHere/hand-gesture-classification/assets/111817817/7242f1c1-e601-4912-8d7f-f88b25110f63" alt="Confusion Matrix of the Test Data"/>
 </p>
 The results were also saved and evaluated in image format. Few example outputs with their respected results are given below.
+
 
 ![Example Results](https://github.com/SparrowHere/hand-gesture-classification/assets/111817817/9690f3ef-b6eb-43f6-ada5-2b8db48545ff)
 
