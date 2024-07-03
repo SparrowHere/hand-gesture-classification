@@ -4,14 +4,14 @@ Hand gesture classification model that leverages skeleton-based model to extract
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ## Table of Contents
-2. [Features]
-3. [Installation]
-4. [Usage]
-5. [Data & Model Training]
-8. [Results]
-9. [Contributing]
-10. [License]
-11. [Acknowledgements]
+1. Features
+2. Installation
+3. Usage
+4. Data & Model Training
+5. Results
+6. Contributing
+7. License
+8. Acknowledgements
 
 ## Features
 
