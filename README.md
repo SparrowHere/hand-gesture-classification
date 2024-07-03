@@ -1,4 +1,4 @@
-Hand Gesture Classification with MediaPipe
+# Hand Gesture Classification with MediaPipe
 Hand gesture classification model that leverages skeleton-based model to extract joint locations from images of hands.
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
