@@ -8,7 +8,7 @@ Hand gesture classification model that leverages skeleton-based model to extract
 - Real-time hand gesture detection and classification.
 - Supports multiple gestures including `Open Palm`, `Peace Sign`, `Rock On`, `OK Sign`, and `NOK Sign`.
 - Utilizes `Mediapipe Hands` for efficient and accurate hand tracking.
-- Model is trained with the joint locations extracted from the images of hands
+- Model is trained with the joint locations that are extracted from the images of hands
 - Extendible and customizable for additional gestures.
 
 ## Installation
