@@ -87,6 +87,7 @@ The confusion matrix of the mentioned test set is given below.
 </p>
 The results were also saved and evaluated in image format. Few of the outputs with their respected results are given below.
 <br/>
+<br/>
 <p align="center">
   <img src="https://github.com/SparrowHere/hand-gesture-classification/assets/111817817/9690f3ef-b6eb-43f6-ada5-2b8db48545ff" alt="Example Results"/>
 </p>
