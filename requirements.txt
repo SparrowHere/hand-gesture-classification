@@ -1,4 +1,4 @@
-python==3.9.15
+python==3.9.*
 opencv-python==4.9.0.80
 numpy==1.26.4
 pandas==2.2.2
