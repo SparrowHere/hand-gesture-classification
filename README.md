@@ -105,4 +105,4 @@ Contributions are welcome! Please follow these steps to contribute:
 This project is licensed under the `MIT License`, see the [LICENSE](https://github.com/SparrowHere/hand-gesture-classification/blob/main/LICENSE) file for details.
 
 ## Acknowledgements
-I would like to share my appriciation for the project team -- my friends who put in the efforts for the whole process and done their best to help me stay motivated. You guys are the best ✌️
+I would like to share my appreciation for the project team -- my friends who put in the efforts for the whole process and done their best to help me stay motivated. You guys are the best ✌️
