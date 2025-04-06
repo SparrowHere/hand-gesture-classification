@@ -28,23 +28,23 @@ DRAW = mp.solutions.drawing_utils
 MODEL = pickle.load(open(MODEL_DIR, 'rb'))
 CAP = cv2.VideoCapture(0)
 
-def resize(image, DESIRED_HEIGHT, DESIRED_WIDTH):
+def resize(image: np.ndarray, height: int, width: int) -> np.ndarray:
     """
     Resizes the given image while maintaining the aspect ratio.
 
     Args:
         image (`np.ndarray`): The input image to be resized.
-        desired_height (`int`): The desired height of the output image.
-        desired_width (`int`): The desired width of the output image.
+        height (`int`): The desired height of the output image.
+        width (`int`): The desired width of the output image.
 
     Returns:
         `np.ndarray`: The resized image.
     """
     H, W = image.shape[:2]
     if H < W:       # Portrait
-        image = cv2.resize(image, (DESIRED_WIDTH, math.floor(H / (W / DESIRED_WIDTH))))
+        image = cv2.resize(image, (width, math.floor(H / (W / width))))
     else:
-        image = cv2.resize(image, (math.floor(W / (H / DESIRED_HEIGHT)), DESIRED_HEIGHT))
+        image = cv2.resize(image, (math.floor(W / (H / height)), height))
     return image
 
 def main():
@@ -83,10 +83,13 @@ def main():
         cv2.imshow('MediaPipe Hands', frame)
 
         if cv2.waitKey(5) & 0xFF == ord('s'):
+            # Save images for training
             img_name = os.path.join(os.getcwd() + "\\test", f"test_{time.time()}.jpg")
             cv2.imwrite(img_name, frame)
             print(f"Saved frame as '{img_name}'")
+            
         if cv2.waitKey(1) & 0xFF == ord('q'):
+            # Exit the program
             break
 
     CAP.release()
